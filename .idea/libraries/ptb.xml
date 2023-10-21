@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ptb">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/sqljdbc_12.2.0.0_ptb/sqljdbc_12.2/ptb/mssql-jdbc-12.2.0.jre8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/sqljdbc_12.2.0.0_ptb/sqljdbc_12.2/ptb/mssql-jdbc-12.2.0.jre11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

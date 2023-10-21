@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CadastroBD/CadastroBD.iml" filepath="$PROJECT_DIR$/CadastroBD/CadastroBD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SQL_Estacio_Nivel_3.iml" filepath="$PROJECT_DIR$/.idea/SQL_Estacio_Nivel_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqljdbc_12.2.0.0_ptb/sqljdbc_12.2.0.0_ptb.iml" filepath="$PROJECT_DIR$/sqljdbc_12.2.0.0_ptb/sqljdbc_12.2.0.0_ptb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqljdbc_12.4.0.0_ptb/sqljdbc_12.4.0.0_ptb.iml" filepath="$PROJECT_DIR$/sqljdbc_12.4.0.0_ptb/sqljdbc_12.4.0.0_ptb.iml" />
+    </modules>
+  </component>
+</project>

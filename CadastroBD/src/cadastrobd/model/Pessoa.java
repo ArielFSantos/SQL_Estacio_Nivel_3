@@ -4,13 +4,13 @@
  */
 package cadastrobd.model;
 public class Pessoa {
-    private int id;
-    private String nome;
-    private String logradouro;
-    private String cidade;
-    private String estado;
-    private String telefone;
-    private String email;
+    int id;
+    String nome;
+    String logradouro;
+    String cidade;
+    String estado;
+    String telefone;
+    String email;
 
     public Pessoa() {
         // Construtor padrão
@@ -35,6 +35,42 @@ public class Pessoa {
         System.out.println("Telefone: " + telefone);
         System.out.println("Email: " + email);
     }
+
+    public String getNome() {
+    return nome;
+    }
+
+   public String getLogradouro() {
+     return logradouro;
+    }
+
+    public String getCidade() {
+    return cidade;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setNome(String novoNome) {
+        nome = novoNome;
+    }
+
+
+
+
 }
 
     

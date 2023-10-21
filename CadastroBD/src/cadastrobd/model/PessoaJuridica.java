@@ -26,39 +26,66 @@ public class PessoaJuridica extends Pessoa {
         System.out.println("CNPJ: " + cnpj);
     }
 
-    String getNome() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String getNome() {
+        return super.getNome();
+}
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String getLogradouro() {
+        return super.getLogradouro();
+}
+
+
+    @Override
+    public String getCidade() {
+        return super.getCidade();
+}
+
+    /**
+     *
+     * @return
+     */
+    @Override
+    public String getEstado() {
+        return super.getEstado();
+}
+
+
+    @Override
+   public String getTelefone() {
+        return super.getTelefone();
+}
+
+    @Override
+    public String getEmail() {
+        return super.getEmail();
     }
 
-    String getLogradouro() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getCnpj() {
+        return cnpj;
     }
 
-    String getCidade() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    String getEstado() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    String getTelefone() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    String getEmail() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    String getCnpj() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
+    @Override
     public int getId() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return super.getId();
     }
 
-    public void setNome(String nova_Empresa_XYZ) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    /**
+     *
+     * @param novoNome
+     */
+    @Override
+    public void setNome(String novoNome) {
+        super.setNome(novoNome);
     }
+
 }
