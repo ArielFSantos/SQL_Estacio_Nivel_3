@@ -88,4 +88,29 @@ public class PessoaJuridica extends Pessoa {
         super.setNome(novoNome);
     }
 
+    public void setCnpj(String cnpj) {
+    this.cnpj = cnpj;
+}
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
+    }
+
+
 }
