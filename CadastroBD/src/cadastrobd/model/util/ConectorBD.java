@@ -16,9 +16,9 @@ public class ConectorBD {
     public ConectorBD(String url, String user, String password) {
         try {
             connection = DriverManager.getConnection(url, user, password);
-            System.out.println("Conexão estabelecida com sucesso.");
+            System.out.println("Conexao estabelecida com sucesso.");
         } catch (SQLException e) {
-            System.err.println("Erro ao estabelecer a conexão com o banco de dados: " + e.getMessage());
+            System.err.println("Erro ao estabelecer a conexao com o banco de dados: " + e.getMessage());
         }
     }
 
@@ -61,10 +61,10 @@ public class ConectorBD {
         try {
             if (connection != null) {
                 connection.close();
-                System.out.println("Conexão fechada com sucesso.");
+                System.out.println("Conexao fechada com sucesso.");
             }
         } catch (SQLException e) {
-            System.err.println("Erro ao fechar a conexão: " + e.getMessage());
+            System.err.println("Erro ao fechar a conexao: " + e.getMessage());
         }
     }
 }

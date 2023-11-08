@@ -81,7 +81,7 @@ public class PessoaFisicaDAO {
         String sqlPessoa = "INSERT INTO Pessoa (nome, logradouro, cidade, estado, telefone, email) VALUES (?, ?, ?, ?, ?, ?)";
         String sqlPessoaFisica = "INSERT INTO PessoaFisica (id, cpf) VALUES (?, ?)";
 
-        int novoId = sequenceManager.getValue("nome_da_sua_sequencia"); // Substitua pelo nome correto da sequência
+        int novoId = sequenceManager.getValue("SequenciaPessoa"); 
 
         try {
             conector.getConnection().setAutoCommit(false);
