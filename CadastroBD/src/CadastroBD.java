@@ -5,6 +5,7 @@ import cadastrobd.model.PessoaJuridicaDAO;
 import java.util.Scanner;
 import cadastrobd.model.util.ConectorBD;
 import cadastrobd.model.util.SequenceManager;
+import java.util.List;
 
 public class CadastroBD {
     public static void main(String[] args) {
@@ -89,7 +90,7 @@ public class CadastroBD {
                             // Chamar o método pessoaJuridicaDAO.incluir(objetoPessoaJuridica)
                             pessoaJuridicaDAO.incluir(pessoaJuridica);
                         }
-                        default -> System.out.println("Opção inválida.");
+                        default -> System.out.println("Opção invalida.");
                     }
                 }
                 case 2 -> {
@@ -184,7 +185,8 @@ public class CadastroBD {
                 }
                 case 3 -> {
     System.out.println("Selecione o tipo (F - Pessoa Física, J - Pessoa Jurídica):");
-    String tipoExclusao = scanner.nextLine();
+    String tipoExclusao;
+                    tipoExclusao = scanner.nextLine();
 
     switch (tipoExclusao) {
         case "F" -> {
@@ -236,6 +238,7 @@ public class CadastroBD {
         default -> System.out.println("Opção inválida.");
     }
 }
+
                 case 4 -> {
     System.out.println("Selecione o tipo (F - Pessoa Física, J - Pessoa Jurídica):");
     String tipoExibirPorID = scanner.nextLine();
@@ -275,18 +278,17 @@ public class CadastroBD {
                     String tipoExibirTodos = scanner.nextLine();
 
                     switch (tipoExibirTodos) {
-                        case "F" -> {
+                        case "F" ->  {
                             System.out.println("Pessoas Físicas no Banco:");
-                            pessoaFisicaDAO.getPessoas().forEach(pf -> {
+                            List<PessoaFisica> pessoasFisicas = (List<PessoaFisica>) pessoaFisicaDAO.getPessoas();
+                            for (PessoaFisica pf : pessoasFisicas) {
                                 System.out.println(pf);
-                            });
+                            }
                         }
 
                         case "J" -> {
                             System.out.println("Pessoas Jurídicas no Banco:");
-                            pessoaJuridicaDAO.getPessoas().forEach(pj -> {
-                                System.out.println(pj);
-                            });
+                            pessoaJuridicaDAO.getPessoas().forEach(System.out::println);
                         }
 
                         default -> System.out.println("Opção inválida.");
