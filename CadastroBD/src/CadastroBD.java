@@ -32,7 +32,7 @@ public class CadastroBD {
 
             switch (opcao) {
                 case 1 -> {
-                    System.out.println("Selecione o tipo (F - Pessoa Física, J - Pessoa Jurídica):");
+                    System.out.println("Selecione o tipo (F - Pessoa Fisica, J - Pessoa Juridica):");
                     String tipoCadastro = scanner.nextLine();
                     switch (tipoCadastro) {
                         case "F"  -> {
@@ -94,12 +94,12 @@ public class CadastroBD {
                     }
                 }
                 case 2 -> {
-                    System.out.println("Selecione o tipo (F - Pessoa Física, J - Pessoa Jurídica):");
+                    System.out.println("Selecione o tipo (F - Pessoa Fisica, J - Pessoa Juridica):");
                     String tipoAlteracao = scanner.nextLine();
                     switch (tipoAlteracao) {
                         case "F" -> {
                             // Implementar opção para alterar Pessoa Física
-                            System.out.println("ID da Pessoa Física a ser alterada: ");
+                            System.out.println("ID da Pessoa Fisica a ser alterada: ");
                             int id = scanner.nextInt();
                             PessoaFisica pessoaFisica = pessoaFisicaDAO.getPessoa(id);
 
@@ -132,16 +132,16 @@ public class CadastroBD {
 
                                 // Chamar o método pessoaFisicaDAO.alterar(pessoaFisica)
                                 pessoaFisicaDAO.alterar(pessoaFisica);
-                                System.out.println("Pessoa Física alterada com sucesso.");
+                                System.out.println("Pessoa Fisica alterada com sucesso.");
                             } else {
-                                System.out.println("Pessoa Física não encontrada.");
+                                System.out.println("Pessoa Fisica não encontrada.");
                             }
                         }
 
                     
                         case "J" -> {
                             // Implementar opção para alterar Pessoa Jurídica
-                            System.out.println("ID da Pessoa Jurídica a ser alterada: ");
+                            System.out.println("ID da Pessoa Juridica a ser alterada: ");
                             int id = scanner.nextInt();
                             PessoaJuridica pessoaJuridica = pessoaJuridicaDAO.getPessoa(id);
 
@@ -174,112 +174,112 @@ public class CadastroBD {
 
                                 // Chamar o método pessoaJuridicaDAO.alterar(pessoaJuridica)
                                 pessoaJuridicaDAO.alterar(pessoaJuridica);
-                                System.out.println("Pessoa Jurídica alterada com sucesso.");
+                                System.out.println("Pessoa Juridica alterada com sucesso.");
                             } else {
-                                System.out.println("Pessoa Jurídica não encontrada.");
+                                System.out.println("Pessoa Juridica não encontrada.");
                             }
                         }
 
-                        default -> System.out.println("Opção inválida.");
+                        default -> System.out.println("Opção invalida.");
                     }
                 }
                 case 3 -> {
-    System.out.println("Selecione o tipo (F - Pessoa Física, J - Pessoa Jurídica):");
+    System.out.println("Selecione o tipo (F - Pessoa Fisica, J - Pessoa Juridica):");
     String tipoExclusao;
                     tipoExclusao = scanner.nextLine();
 
     switch (tipoExclusao) {
         case "F" -> {
-            System.out.println("ID da Pessoa Física a ser excluída: ");
+            System.out.println("ID da Pessoa Fisica a ser excluida: ");
             int id = scanner.nextInt();
             PessoaFisica pessoaFisica = pessoaFisicaDAO.getPessoa(id);
 
             if (pessoaFisica != null) {
-                System.out.println("Dados da Pessoa Física a ser excluída:");
+                System.out.println("Dados da Pessoa Fisica a ser excluida:");
                 System.out.println(pessoaFisica);
 
-                System.out.println("Tem certeza de que deseja excluir esta Pessoa Física? (S/N)");
+                System.out.println("Tem certeza de que deseja excluir esta Pessoa Fisica? (S/N)");
                 String confirmacao = scanner.next();
 
                 if (confirmacao.equalsIgnoreCase("S")) {
                     pessoaFisicaDAO.excluir(id);
-                    System.out.println("Pessoa Física excluída com sucesso.");
+                    System.out.println("Pessoa Fisica excluida com sucesso.");
                 } else {
                     System.out.println("Operação de exclusão cancelada.");
                 }
             } else {
-                System.out.println("Pessoa Física não encontrada.");
+                System.out.println("Pessoa Fisica não encontrada.");
             }
         }
 
         case "J" -> {
-            System.out.println("ID da Pessoa Jurídica a ser excluída: ");
+            System.out.println("ID da Pessoa Juridica a ser excluida: ");
             int id = scanner.nextInt();
             PessoaJuridica pessoaJuridica = pessoaJuridicaDAO.getPessoa(id);
 
             if (pessoaJuridica != null) {
-                System.out.println("Dados da Pessoa Jurídica a ser excluída:");
+                System.out.println("Dados da Pessoa Juridica a ser excluida:");
                 System.out.println(pessoaJuridica);
 
-                System.out.println("Tem certeza de que deseja excluir esta Pessoa Jurídica? (S/N)");
+                System.out.println("Tem certeza de que deseja excluir esta Pessoa Juridica? (S/N)");
                 String confirmacao = scanner.next();
 
                 if (confirmacao.equalsIgnoreCase("S")) {
                     pessoaJuridicaDAO.excluir(id);
-                    System.out.println("Pessoa Jurídica excluída com sucesso.");
+                    System.out.println("Pessoa Juridica excluida com sucesso.");
                 } else {
                     System.out.println("Operação de exclusão cancelada.");
                 }
             } else {
-                System.out.println("Pessoa Jurídica não encontrada.");
+                System.out.println("Pessoa Juridica não encontrada.");
             }
         }
 
-        default -> System.out.println("Opção inválida.");
+        default -> System.out.println("Opção invalida.");
     }
 }
 
                 case 4 -> {
-    System.out.println("Selecione o tipo (F - Pessoa Física, J - Pessoa Jurídica):");
+    System.out.println("Selecione o tipo (F - Pessoa Fisica, J - Pessoa Jurídica):");
     String tipoExibirPorID = scanner.nextLine();
 
     switch (tipoExibirPorID) {
         case "F" -> {
-            System.out.println("ID da Pessoa Física a ser exibida: ");
+            System.out.println("ID da Pessoa Fisica a ser exibida: ");
             int id = scanner.nextInt();
             PessoaFisica pessoaFisica = pessoaFisicaDAO.getPessoa(id);
 
             if (pessoaFisica != null) {
-                System.out.println("Dados da Pessoa Física:");
+                System.out.println("Dados da Pessoa Fisica:");
                 System.out.println(pessoaFisica);
             } else {
-                System.out.println("Pessoa Física não encontrada.");
+                System.out.println("Pessoa Fisica não encontrada.");
             }
         }
 
         case "J" -> {
-            System.out.println("ID da Pessoa Jurídica a ser exibida: ");
+            System.out.println("ID da Pessoa Juridica a ser exibida: ");
             int id = scanner.nextInt();
             PessoaJuridica pessoaJuridica = pessoaJuridicaDAO.getPessoa(id);
 
             if (pessoaJuridica != null) {
-                System.out.println("Dados da Pessoa Jurídica:");
+                System.out.println("Dados da Pessoa Juridica:");
                 System.out.println(pessoaJuridica);
             } else {
-                System.out.println("Pessoa Jurídica não encontrada.");
+                System.out.println("Pessoa Juridica não encontrada.");
             }
         }
 
-        default -> System.out.println("Opção inválida.");
+        default -> System.out.println("Opção invalida.");
     }
 }
                 case 5 -> {
-                    System.out.println("Selecione o tipo (F - Pessoa Física, J - Pessoa Jurídica):");
+                    System.out.println("Selecione o tipo (F - Pessoa Fisica, J - Pessoa Juridica):");
                     String tipoExibirTodos = scanner.nextLine();
 
                     switch (tipoExibirTodos) {
                         case "F" ->  {
-                            System.out.println("Pessoas Físicas no Banco:");
+                            System.out.println("Pessoas Fisicas no Banco:");
                             List<PessoaFisica> pessoasFisicas = (List<PessoaFisica>) pessoaFisicaDAO.getPessoas();
                             for (PessoaFisica pf : pessoasFisicas) {
                                 System.out.println(pf);
@@ -287,15 +287,15 @@ public class CadastroBD {
                         }
 
                         case "J" -> {
-                            System.out.println("Pessoas Jurídicas no Banco:");
+                            System.out.println("Pessoas Juridicas no Banco:");
                             pessoaJuridicaDAO.getPessoas().forEach(System.out::println);
                         }
 
-                        default -> System.out.println("Opção inválida.");
+                        default -> System.out.println("Opção invalida.");
                     }
                 }
                 case 0 -> System.out.println("Saindo...");
-                default -> System.out.println("Opção inválida.");
+                default -> System.out.println("Opção invalida.");
             }
       
                     } while (opcao != 0);
