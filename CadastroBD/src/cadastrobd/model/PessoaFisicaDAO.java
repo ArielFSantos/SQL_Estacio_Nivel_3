@@ -6,7 +6,6 @@ package cadastrobd.model;
 
 import cadastrobd.model.util.ConectorBD;
 import cadastrobd.model.util.SequenceManager;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -37,7 +37,7 @@ public class Pessoa {
     }
 
     public String getNome() {
-    return nome;
+        return nome;
     }
 
    public String getLogradouro() {
@@ -45,7 +45,7 @@ public class Pessoa {
     }
 
     public String getCidade() {
-    return cidade;
+        return cidade;
     }
 
     public String getEstado() {
